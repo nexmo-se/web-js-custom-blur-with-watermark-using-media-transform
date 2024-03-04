@@ -1,4 +1,4 @@
-# Video Stream Transformer
+# Video Stream Transformer using Custom Blur and Watermark
 
 This repository contains code to modify a video stream using [@vonage/media-processor](https://www.npmjs.com/package/@vonage/media-processor) package. It allows users to overlay Blur and watermark image onto a video stream. This uses a custom blur and watermark transformer
 
