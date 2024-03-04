@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video Blur Watermark</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blur Watermark</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body class="bg-gray-200 min-h-screen flex justify-center items-center">
+        <div
+          class="flex w-[1200px] lg:w-[1200px] xl:w-[1200px]bg-white rounded-lg border border-primaryBorder shadow-default"
+        >
+          <div class="w-1/2 p-6 h-100">
+            <div id="publisher" class="h-full"></div>
+          </div>
+
+          <div class="w-1/2 p-6">
+            <h1
+              class="text-2xl font-medium text-primary mt-4 mb-12 text-center"
+            >
+              Custom Generator
+            </h1>
+           
+
+            <div id="blur-watermark-form">
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >Upload Image</label
+              >
+              <input
+                type="file"
+                id="blur-watermark-image"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+                accept="image/png, image/jpeg"
+              />
+
+              <label class="font-semibold text-sm text-gray-600 pb-1 block"
+                >Position</label
+              >
+              <select
+                id="blur-watermark-position"
+                class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+              >
+                <option value="top-left">Top Left</option>
+                <option value="top-right">Top Right</option>
+                <option value="bottom-left">Bottom Left</option>
+                <option value="bottom-right">Bottom Right</option>
+              </select>
+            </div>
+            <button
+              id="apply-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5"
+            >
+              Apply Transformer
+            </button>
+            <button
+              id="clear-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5"
+            >
+              Clear Transformer
+            </button>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
